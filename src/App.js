@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './App.css';
+import Coin from './component/Coin';
 
 function App() {
   const [crypto, setCrypto] = useState([]);
@@ -19,7 +20,15 @@ function App() {
       <div className="cryptoHead"></div>
       <div className="cryptoList">
       {crypto.map((coin) => {
-        return <h1 key={coin.id}>{coin.name}</h1>
+        return (
+          <Coin 
+            key={coin.id.toString()}
+            name={coin.name} 
+            icon={coin.icon} 
+            price={coin.price} 
+            symbol={coin.symbol} 
+          />
+        )
       })}
       </div>
     </div>
