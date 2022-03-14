@@ -17,10 +17,10 @@ function App() {
   },[])
 
   const filteredList = crypto.filter((coin) => {
-    return coin.name.includes({search})
-    
+    return coin.name.toLowerCase().includes(search.toLowerCase())
   })
 
+  console.log(filteredList);
 
   return (
     <div className="App">
