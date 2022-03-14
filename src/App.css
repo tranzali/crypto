@@ -9,7 +9,7 @@ body {
   margin: 0%;
 }
 
-.cryptoHeader {
+.cryptoHead {
   width: 100%;
   height: 200px;
   background-color: rgb(255, 196, 0);
@@ -18,7 +18,7 @@ body {
   align-items: center;
 }
 
-.cryptoHeader input {
+.cryptoHead input {
   width: 50%;
   height: 50px;
   border: none;
@@ -31,7 +31,7 @@ body {
   margin-top: 10px;
 }
 
-.cryptoDisplay {
+.cryptoList {
   margin-top: 20px;
   display: flex;
   justify-content: center;
